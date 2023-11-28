@@ -1,0 +1,85 @@
+@charset 'UTF-8';
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+:root{
+	--fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Pacifico', cursive;
+	--fonte3: 'Passion one' cursive;
+}
+*{
+	margin: 0px;
+	padding: 0px;
+	font-size: 1em;
+}
+html, body{
+	font-family: var(--fonte1);
+	min-height: 100vh;
+	background-color: darkgray;
+}
+header{
+	background-color: black;
+	color: white;
+	text-align: center;
+	font-family: var(--fonte3);
+	
+}
+header > h1 {
+    font-variant: small-caps;
+	padding-top: 50px;
+	font-size: 10vw;
+}
+header > p{
+	padding-bottom: 50px;
+}
+a{
+	color: white;
+	text-decoration: none;
+	font-weight: bolder;
+}
+a:hover{
+	text-decoration: underline;
+}
+section{
+	padding-top: 10%;
+	padding-bottom: 10%;
+	line-height: 2em;
+	padding-left: 30px;
+	font-family: var(--fonte2);
+	font-size: 4.5vw;
+}
+section > p {
+	padding-bottom: 1em;
+}
+section.imagem{
+	background-color: rgb(0, 0, 0);
+	color: white;
+	box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.425);
+	background-attachment: fixed;
+}
+section.imagem > p{
+   display: inline-block;
+   padding: 5px;
+   background-color: rgba(0, 0, 0, 0.589);
+  
+}
+section#img1{
+   background-image: url(../desafio012/imagens/background001.jpg);
+   background-position: center center;
+   background-size: cover; 
+}
+section#img2{
+   background-image: url(imagens/background002.jpg);
+   background-size: cover;
+}
+section.normal{
+	background-color: white;
+	color: black;
+}
+footer{
+	background-color: black;
+	text-align: center;
+	color: white;
+	padding: 10px;
+}
